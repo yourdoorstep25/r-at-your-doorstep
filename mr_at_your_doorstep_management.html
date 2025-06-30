@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mr. @ Your Doorstep – Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-700 text-white py-4 shadow">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Admin Dashboard</h1>
+            <a href="/index.html" class="underline hover:text-gray-200">← Back to Website</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Orders Panel -->
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Orders</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">View Recent Orders</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Manage Order Status</a></li>
+                </ul>
+            </div>
+            <!-- Products Panel -->
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Products</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">Add New Product</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Edit Categories</a></li>
+                </ul>
+            </div>
+            <!-- Rentals Panel -->
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Fridge Rentals</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">View Rental Requests</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Update Rental Status</a></li>
+                </ul>
+            </div>
+            <!-- Users Panel -->
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Users & Students</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">Manage Accounts</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Send Notifications</a></li>
+                </ul>
+            </div>
+            <!-- Deals Panel -->
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Student Deals</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">Add New Promo</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">View Active Discounts</a></li>
+                </ul>
+            </div>
+            <!-- Settings Panel -->
+            <div class="bg-white rounded-xl shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Site Settings</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-blue-600 hover:underline">Update Contact Info</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Configure Payment Methods</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-900 text-white text-center py-4 mt-12">
+        <p>&copy; <span id="year"></span> Mr. @ Your Doorstep – Admin Panel</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

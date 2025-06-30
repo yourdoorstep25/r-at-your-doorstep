@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. @ Your Doorstep – Essentials Delivered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 bg-gray-100">
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Mr. @ Your Doorstep</a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#shop" class="hover:text-blue-600">Shop</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#deals" class="hover:text-blue-600">Student Deals</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+            <button class="md:hidden text-3xl focus:outline-none" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden bg-white">
+            <a href="#shop" class="block px-4 py-2 border-t hover:bg-gray-50">Shop</a>
+            <a href="#about" class="block px-4 py-2 border-t hover:bg-gray-50">About</a>
+            <a href="#deals" class="block px-4 py-2 border-t hover:bg-gray-50">Student Deals</a>
+            <a href="#contact" class="block px-4 py-2 border-t hover:bg-gray-50">Contact</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Essentials Delivered. Comfort Secured.</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Affordable meat, groceries, books, fridge rentals and more — all at your fingertips.</p>
+            <a href="#shop" class="bg-white text-blue-700 rounded-xl px-6 py-3 font-semibold shadow">Start Shopping</a>
+        </div>
+    </section>
+
+    <section id="shop" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-12">Shop by Category</h2>
+            <div class="grid gap-8 md:grid-cols-4">
+                <div class="bg-white rounded-2xl shadow p-8 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Fresh Meat</h3>
+                    <p class="mb-4">Quality cuts delivered daily.</p>
+                    <a href="#" class="text-blue-600 font-medium">Browse Meat →</a>
+                </div>
+                <div class="bg-white rounded-2xl shadow p-8 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Groceries</h3>
+                    <p class="mb-4">Pantry basics to tasty treats.</p>
+                    <a href="#" class="text-blue-600 font-medium">Browse Groceries →</a>
+                </div>
+                <div class="bg-white rounded-2xl shadow p-8 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Books</h3>
+                    <p class="mb-4">Academic and lifestyle reads.</p>
+                    <a href="#" class="text-blue-600 font-medium">Browse Books →</a>
+                </div>
+                <div class="bg-white rounded-2xl shadow p-8 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Fridge Rentals</h3>
+                    <p class="mb-4">Affordable student fridge rental service.</p>
+                    <a href="#" class="text-blue-600 font-medium">Rent a Fridge →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-semibold text-center mb-10">About Us</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+                    <p>To provide essential everyday goods and affordable services directly to students’ doorsteps, making student life more convenient, reliable, and budget-friendly.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
+                    <p>To be South Africa’s leading student-centered delivery and rental service, empowering young minds through access to daily essentials and support solutions.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Founder’s Note</h3>
+                    <p>My name is <strong>Mbekezeli Ndlazi</strong>, a former UNIZULU student in Business Management and Banking. I founded Mr. @ Your Doorstep to help fellow students access what they need easily, affordably, and with great service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deals" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-10">Exclusive Student Deals</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="mb-6">Enjoy bundle discounts, weekly specials, and referral rewards crafted just for students.</p>
+                <a href="#" class="text-blue-600 font-medium">See Current Offers →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-semibold text-center mb-10">Get in Touch</h2>
+            <!-- Contact form will be edited -->
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center space-y-4">
+            <p>&copy; <span id="year"></span> Mr. @ Your Doorstep. All rights reserved.</p>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-blue-300">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-300">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
